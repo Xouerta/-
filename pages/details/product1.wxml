@@ -1,0 +1,10 @@
+<!-- product-detail.wxml -->
+
+<view class="product-detail">
+  <image class="product-image" src="{{product.image}}" mode="aspectFill"></image>
+  <view class="product-info">
+    <text class="product-name">{{product.name}}</text>
+    <text class="product-price">¥{{product.price}}</text>
+    <text class="product-description">{{product.description}}</text>
+  </view>
+</view>

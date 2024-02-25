@@ -1,0 +1,33 @@
+/* detail.wxss */
+
+.detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20rpx;
+}
+
+.detail-image {
+  width: 80%;
+  max-width: 300rpx;
+  height: 200rpx;
+  margin-bottom: 10rpx;
+}
+
+.detail-name {
+  font-size: 18rpx;
+  margin-top: 10rpx;
+}
+
+.detail-price {
+  font-size: 20rpx;
+  color: #e44d26;
+  margin-top: 5rpx;
+}
+
+.detail-description {
+  font-size: 14rpx;
+  color: #555;
+  margin-top: 10rpx;
+  text-align: justify;
+}

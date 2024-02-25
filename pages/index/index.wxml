@@ -1,0 +1,26 @@
+<!-- index.wxml -->
+<import src="../index/index.js"/>
+<view class="container">
+  <swiper class="swiper" indicator-dots autoplay circular>
+    <swiper-item>
+      <image src="../images/banner1.jpg" mode="aspectFit" style="height:200px;width:100%;"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../images/banner2.jpg" mode="aspectFit"style="height:200px;width:100%;"></image>
+    </swiper-item>
+    <!-- 添加更多轮播图项 -->
+  </swiper>
+
+  <view class="search-bar">
+    <input class="search-input" placeholder="搜索商品"></input>
+    <button class="search-button" bindtap="search">搜索</button>
+  </view>
+
+  <view class="product-list">
+  <view wx:for="{{products}}" wx:key="id" bindtap="goToDetail" data-product-id="{{item.id}}">
+    <image src="{{item.image}}" mode="aspectFit" style="height: 240px;width: 100%;"></image>
+    <text class="product-name" style="font-size: larger;">{{item.name}}</text>
+    <text class="product-price" style="font-size: larger;">¥{{item.price}}</text>
+  </view>
+</view>
+</view>

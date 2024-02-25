@@ -1,0 +1,8 @@
+<!-- detail.wxml -->
+
+<view class="detail-container">
+  <image class="detail-image" src="/images/product1.jpg" mode="aspectFill"></image>
+  <text class="detail-name">商品名称</text>
+  <text class="detail-price">¥99.99</text>
+  <text class="detail-description">商品详细描述...</text>
+</view>
